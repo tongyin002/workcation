@@ -14,9 +14,9 @@ npm run dev
 **tailwind is such a good tool!!!!!! it actually makes you think and learn css!!!!!!!**
 
 ### mobile
-<img src="./public/mobile0.png" width="300">
-<img src="./public/mobile1.png" width="300">
-<img src="./public/mobile2.png" width="300">
+<img style="display:inline-block" src="./public/mobile0.png" width="300">
+<img style="display:inline-block" src="./public/mobile1.png" width="300">
+<img style="display:inline-block" src="./public/mobile2.png" width="300">
 
 ### ipad
 <img src="./public/ipad0.png" width="450">
