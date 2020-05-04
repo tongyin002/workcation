@@ -14,14 +14,14 @@ npm run dev
 **tailwind is such a good tool!!!!!! it actually makes you think and learn css!!!!!!!**
 
 ### mobile
-<img src="./public/mobile0.png" width="310">
-<img src="./public/mobile1.png" width="310">
-<img src="./public/mobile2.png" width="310">
+<img src="./public/mobile0.png" width="300">
+<img src="./public/mobile1.png" width="300">
+<img src="./public/mobile2.png" width="300">
 
 ### ipad
-<img src="./public/ipad0.png" width="465">
-<img src="./public/ipad1.png" width="465">
-<img src="./public/ipad2.png" width="465">
+<img src="./public/ipad0.png" width="450">
+<img src="./public/ipad1.png" width="450">
+<img src="./public/ipad2.png" width="450">
 
 ### desktop
 <img src="./public/pc.png">
