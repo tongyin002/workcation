@@ -1,74 +1,27 @@
-# Next.js
+# Workcation mockup (React with Tailwindcss)
 
-To add Tailwind to a Next (^9.2.0) project, start by installing `tailwindcss`, `postcss-import` and `autoprefixer`:
+A mockup front-end for 'workcation' based on the [design](https://www.figma.com/file/SNUysoGLVJPm286sgXCEm2Ag/tailwind-course?node-id=0%3A1&viewport=5813%2C-667%2C0.3258124887943268) from Adam Wathan.
 
-```sh
-npm install tailwindcss postcss-import autoprefixer --save
+Made a couple of improvement on the implementation:
+* *Single source of truth*:
+  In the live stream of building workcation by Adam, a couple of input fields are implemented as redundant components for different view ports. (Dropdown menu, search bar).
+  Reimplemented this whole design slightly differently so that every input field now is a single source of truth.
+
+Run locally:
+```bash
+npm run dev
 ```
+**tailwind is such a good tool!!!!!! it actually makes you think and learn css!!!!!!!**
 
-Next, set up your PostCSS plugins by creating a `postcss.config.js` file and adding the following configuration:
+### mobile
+<img src="./public/mobile0.png" width="310">
+<img src="./public/mobile1.png" width="310">
+<img src="./public/mobile2.png" width="310">
 
-```js
-module.exports = {
-  plugins: [
-    "postcss-import",
-    "tailwindcss",
-    "autoprefixer"
-  ]
-};
+### ipad
+<img src="./public/ipad0.png" width="465">
+<img src="./public/ipad1.png" width="465">
+<img src="./public/ipad2.png" width="465">
 
-```
-
-Next, create a CSS file for your Tailwind styles. We've used `css/tailwind.css` for this example:
-
-```css
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-```
-
-Finally, import your CSS in your `_app.js` component to make them available globally:
-
-```jsx
-import React from 'react'
-import App from 'next/app'
-import '../css/tailwind.css'
-
-class MyApp extends App {
-  render() {
-    const { Component, pageProps } = this.props
-    return <Component {...pageProps} />
-  }
-}
-
-export default MyApp
-```
-## Setting up Purgecss (optional)
-To add Purgecss, start by installing `@fullhuman/postcss-purgecss`. 
-
-```sh
-npm install @fullhuman/postcss-purgecss --save
-```
-
-Finally, add Purgecss to PostCSS plugins by updating the `postcss.config.js` file and adding the following configuration:
-
-```js
-const purgecss = [
-  "@fullhuman/postcss-purgecss",
-  {
-    content: ["./components/**/*.js", "./pages/**/*.js"],
-    defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
-  }
-];
-module.exports = {
-  plugins: [
-    "postcss-import",
-    "tailwindcss",
-    "autoprefixer",
-    ...(process.env.NODE_ENV === "production" ? [purgecss] : [])
-  ]
-};
-
-```
-
-[Learn more about using Purgecss with Tailwind here.](https://tailwindcss.com/docs/controlling-file-size#setting-up-purgecss)
+### desktop
+<img src="./public/pc.png">
